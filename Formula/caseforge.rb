@@ -5,21 +5,21 @@
 class Caseforge < Formula
   desc "AI-powered HTTP API test-case generator from OpenAPI specs"
   homepage "https://github.com/testmind-hq/caseforge"
-  version "0.10.2"
+  version "0.11.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/testmind-hq/caseforge/releases/download/v0.10.2/caseforge_0.10.2_darwin_amd64.tar.gz"
-      sha256 "9870959f670be5f0b58df998a9a26e68774471bbd354bd5eb2afb9cd3b21b651"
+      url "https://github.com/testmind-hq/caseforge/releases/download/v0.11.0/caseforge_0.11.0_darwin_amd64.tar.gz"
+      sha256 "d0368f6c65e2a8c0d7bd5d8d328ae66563733f6fec807ddfed13d0340796c0cc"
 
       define_method(:install) do
         bin.install "caseforge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/testmind-hq/caseforge/releases/download/v0.10.2/caseforge_0.10.2_darwin_arm64.tar.gz"
-      sha256 "29b7bc0918c3f780a9d00103473d1b7127242ac8d9a7a0d86c163975936ee427"
+      url "https://github.com/testmind-hq/caseforge/releases/download/v0.11.0/caseforge_0.11.0_darwin_arm64.tar.gz"
+      sha256 "4a0d1b586bc9fdd5f170f35bec785c54851a6ebb19f1d7773c65855f50f8cde9"
 
       define_method(:install) do
         bin.install "caseforge"
@@ -29,15 +29,15 @@ class Caseforge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/testmind-hq/caseforge/releases/download/v0.10.2/caseforge_0.10.2_linux_amd64.tar.gz"
-      sha256 "15a10d0a50abecbbff17fe8f83fa058356dc18b8ac62da5b4ebe0fcdd730eab4"
+      url "https://github.com/testmind-hq/caseforge/releases/download/v0.11.0/caseforge_0.11.0_linux_amd64.tar.gz"
+      sha256 "36d7af31ec3cb5bdd68a2d45ffebf6228438178a0d09f9397b68f5b542190772"
       define_method(:install) do
         bin.install "caseforge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/testmind-hq/caseforge/releases/download/v0.10.2/caseforge_0.10.2_linux_arm64.tar.gz"
-      sha256 "1b3b4f0f32970a6807a550d7e4403ecbad7ae978a76c9c50757418689c8c8e35"
+      url "https://github.com/testmind-hq/caseforge/releases/download/v0.11.0/caseforge_0.11.0_linux_arm64.tar.gz"
+      sha256 "44a831b9a957cf4078ff6172f0ee8670fff17e8632c331e33b815e96cda54411"
       define_method(:install) do
         bin.install "caseforge"
       end
