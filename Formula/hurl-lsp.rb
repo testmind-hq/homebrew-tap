@@ -2,22 +2,22 @@ class HurlLsp < Formula
   desc "Language Server Protocol implementation for Hurl"
   homepage "https://github.com/testmind-hq/hurl-lsp"
   license "MIT"
-  version "0.1.13"
+  version "0.2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/testmind-hq/hurl-lsp/releases/download/v#{version}/hurl-lsp-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "1ef4938ff40bbd189150bf24c4b8a8e4e716348684e91b09f076c5d6dd522bfe"
+      sha256 "0551f7ec7fe4435ff6df6b16b64e7ad4b71945d0544875e3ce697c699417ac41"
     end
     on_intel do
       url "https://github.com/testmind-hq/hurl-lsp/releases/download/v#{version}/hurl-lsp-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "60d19cb0f6b18cde0687c0551bc9bdf737cc4ba3eef65607c034ee4191effb92"
+      sha256 "ad9112a156593a81e93f697aaeb869d5a5fe283b4c541d38dcaabc54eaf24b3f"
     end
   end
 
   on_linux do
     url "https://github.com/testmind-hq/hurl-lsp/releases/download/v#{version}/hurl-lsp-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "9ecf8cdf0f874e607b9d7911bdccd8c82485c2092f85476d5a0b85344e74a5d8"
+    sha256 "394fa92a058e5c5237925858be93f9b1cbb408874ef4fd8d0e80977af6d43cb6"
   end
 
   def install
